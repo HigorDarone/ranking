@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<main>
+<h2>INSIRA SEUS DADOS PARA ENTRAR NO RANKING</h2>
+
+        <form class="formulario" method="post" th:action="@{cadastro_jogador}" th:object="${jogador}">
+        <label for="nome" >Nome e Sobrenome</label>
+        <input id="nome" placeholder="Digite seu nome completo!" type="text" th:field="*{nome}">
+
+        <label for="nick">nickgame</label>
+        <input id="nick" placeholder="Digite seu nome no jogo!" type="text" th:field="*{nick}">
+
+        <label for="jogo">Jogo favorito</label>
+        <input id="jogo" placeholder="Digite seu nome completo!" type="text" th:field="*{jogofav}">
+
+            <input type="submit" value="CADASTRAR">
+        </form>
+
+</main>
+
+</body>
+</html>
