@@ -21,7 +21,7 @@ public class CadastrarController  {
     @PostMapping("/cadastro_jogador")
     public String cadastro(Jogador jogador){
         jogadorRepository.save(jogador);
-                return "index";
+                return "redirect:/";
 
     }
 
