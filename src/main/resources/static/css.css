@@ -1,4 +1,15 @@
+body{
+    background: rgb(24, 101, 245);
+}
+
+
 .formulario{
-display: inline;
+display: block;
 width: 200px;
+margin: 0 auto;
+padding: 100px;
+}
+
+.principal{
+text-align: center;
 }

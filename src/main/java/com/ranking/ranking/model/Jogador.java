@@ -3,12 +3,10 @@ package com.ranking.ranking.model;
 import jakarta.persistence.*;
 
 @Entity
-
 public class Jogador {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-
     private int id;
 
     @Column

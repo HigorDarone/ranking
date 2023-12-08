@@ -7,7 +7,34 @@
 <body>
 <h1>RANKING DO HIGAO</h1>
 
+
+
+
+<table>
+    <thead>
+    <tr>
+    <th>ID</th>
+    <th>NOME</th>
+    <th>NICKNAME</th>
+    <th>JOGO_FAVORITO</th>
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr th:each="prod: ${tabelaranking}">
+    <td th:text="${prod.id}"></td>
+    <td th:text="${prod.nome}"></td>
+    <td th:text="${prod.nick}"></td>
+    <td th:text="${prod.jogofav}"></td>
+    </tr>
+    </tbody>
+</table>
+
+
 <P><a th:href="@{/cadastro}">Cadastrar jogo</a></P>
+
+
+
 
 </body>
 </html>
